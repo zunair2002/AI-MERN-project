@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+  background: linear-gradient(135deg, #5a2a6e, #09425b);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.chat-container {
+  max-width: 1400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ai-name {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  background-color: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+.navbaar{
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.ai-description {
+  font-size: 0.5 rem;
+  color: #ffffff !important;
+}
+
+.chat-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.chat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.box-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+.boxx {
+  color: #ffffff !important;
+}
+
+.boxx::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important; 
+}
+.response-area {
+  color: #ffffff;
+}
+
+.response-area h1,
+.response-area h2,
+.response-area h3,
+.response-area h4 {
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.553);
+  padding-bottom: 8px;
+}
+
+.response-area p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.response-area strong {
+  font-weight: 600;
+  color: #e2e2e2;
+}
+
+.response-area ul,
+.response-area ol {
+  padding-left: 25px;
+  margin-bottom: 16px;
+}
+
+.response-area li {
+  margin-bottom: 8px;
+}
+.user-side .prompt-area textarea {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 1rem;
+  font-size: 1.05rem;
+  resize: none; 
+  background-color: #f8f9fa36;
+  transition: border-color 0.2s;
+}
+
+.user-side .prompt-area textarea:focus {
+  border-color: #340054;
+  box-shadow: 0 0 0 0.25rem rgba(75, 137, 255, 0.25);
+}
+
+.user-side .btn-primary {
+  background: linear-gradient(135deg, #5a2a6e7f, #09425b7b);
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 10px;
+  transition: background 0.5s ease-in;
+}
+.ai-side .btn-primary {
+  background: linear-gradient(135deg, #5a2a6e7f, #09425b7b);
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 51px;
+  border-radius: 10px;
+  transition: background 0.5s ease-in;
+}
+
+.ai-side .response-area {
+  background-color: #f8f9fa36;
+  border-radius: 10px;
+  padding: 1.5rem;
+  min-height: 250px; 
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.response-area {
+  height: 450px; 
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.message {
+  padding: 12px 18px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  max-width: 85%;
+  line-height: 1.6;
+  color: white; 
+  position: relative;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #5a2a6e7f, #09425b7b);
+  align-self: flex-end;
+}
+
+.message.model {
+  background-color: rgba(255, 255, 255, 0.2);
+  align-self: flex-start;
+}
+
+.message-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.message-actions button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.message-actions button:hover {
+  color: white;
+}
+
+.response-area::-webkit-scrollbar {
+  width: 8px;
+}
+.response-area::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.response-area::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.response-area::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.foot{
+  color: #ffffff !important;
+}
+
+
+@media (max-width: 991.98px) {
+  .chat-box {
+    padding: 1.5rem;
+  }
+  .ai-name {
+    font-size: 2.2rem;
+  }
+}
